@@ -141,7 +141,11 @@ const features: FeatureExample[] = [
             <span className="text-xs text-muted-foreground">&lt;Badge&gt;</span>
           </div>
           <div className="flex items-center gap-2">
-            <Input placeholder="Input" className="w-40" />
+            <input
+              placeholder="Input example"
+              className="w-40 px-3 py-1 border rounded text-sm"
+              readOnly
+            />
             <span className="text-xs text-muted-foreground">&lt;Input&gt;</span>
           </div>
         </div>
