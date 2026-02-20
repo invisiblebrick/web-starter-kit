@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import { Input } from "@/components/ui/input";
 import {
   Dialog,
   DialogContent,
@@ -141,9 +142,9 @@ const features: FeatureExample[] = [
             <span className="text-xs text-muted-foreground">&lt;Badge&gt;</span>
           </div>
           <div className="flex items-center gap-2">
-            <input
+            <Input
               placeholder="Input example"
-              className="w-40 px-3 py-1 border rounded text-sm"
+              className="w-40"
               readOnly
             />
             <span className="text-xs text-muted-foreground">&lt;Input&gt;</span>
@@ -290,9 +291,9 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {features.map((feature, index) => (
+          {features.map((feature) => (
             <Card
-              key={index}
+              key={feature.title}
               className="group hover:shadow-lg transition-all cursor-pointer hover:border-primary/50"
               onClick={() => setSelectedFeature(feature)}
             >
