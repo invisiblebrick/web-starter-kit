@@ -32,6 +32,7 @@ import {
   X,
   AlertCircle,
 } from "lucide-react";
+import Link from "next/link";
 
 interface FeatureExample {
   icon: React.ReactNode;
@@ -236,6 +237,13 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Header with Login Button */}
+      <header className="container mx-auto px-4 py-4 flex justify-end">
+        <Link href="/login">
+          <Button variant="outline" size="sm">Login</Button>
+        </Link>
+      </header>
+
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-24 md:py-32">
         <div className="flex flex-col items-center text-center space-y-8">
